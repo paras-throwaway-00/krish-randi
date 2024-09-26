@@ -1,0 +1,41 @@
+html {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.grid-container {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+}
+
+.element {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+h1 {
+    color: #f5a067;
+    font-size: 55px;
+}
+
+p {
+    color: aquamarine;
+    font-size: 25px;
+}
+
+.pressed {
+    box-shadow: 0 3px 4px 0 #DBEDF3;
+    opacity: 0.5;
+    background-color: azure;
+}
+
+button {
+    background-color: coral;
+}
+
+.a1 {
+    display: flex;
+    text-align: center;
+}
