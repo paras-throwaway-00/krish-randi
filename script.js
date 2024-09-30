@@ -10,7 +10,7 @@ for (let i = 0; i < buttonArray.length; i++) {
 
 
 document.addEventListener("keydown", function(event) {
-    var validKeysArray = ["w", "a", "s", "d"];
+    var validKeysArray = ["w", "a", "s", "d", "j", "k"];
     var pressedKey = event.key.toLowerCase();
     if (validKeysArray.includes(pressedKey)) {
       makeSound(pressedKey);
@@ -40,6 +40,14 @@ function makeSound(key) {
             break;
         case "d":
             audio = new Audio("./assets/sounds/amit-ji.mp3");
+            audio.play();
+            break;
+        case "j":
+            audio = new Audio("./assets/sounds/krish-di-fuddi.m4a");
+            audio.play();
+            break;
+        case "k":
+            audio = new Audio("./assets/sounds/bsdk-mc.m4a");
             audio.play();
             break;
         default:
